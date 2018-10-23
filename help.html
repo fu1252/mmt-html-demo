@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>苗木通</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+<script>
+  $(document).ready(function () {
+      $('.first-item').click(function (e) { 
+          e.preventDefault();
+          var die=$(this);
+          if (die.next('ul').is(':hidden')) {
+              $(".seconde-item").hide(1000);
+              die.next('ul').show(1000);
+          } else {
+              die.next('ul').hide(1000)
+          }
+      });
+      $('#j-sidebtn').click(function (e) { 
+          e.preventDefault();
+          $('#j-sidenav').toggleClass('width-50').fadeToggle().next().toggleClass('marginleft-23')
+      });    
+  
+  
+  });
+</script>
+<link rel="stylesheet" href="./css/slimmenu.min.css">
+<script src="./js/jquery.slimmenu.js"></script>
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+<script>
+   $(document).ready(function () {
+    $('#nav').slimmenu({
+        resizeWidth: '800', //画面幅がこのピクセル以下になったらスマホ対応メニューにするという設定
+        collapserTitle: '苗木通', //スマホ表示になった時のヘッダーメニュータイトルの名前
+        animSpeed: 'medium',
+        easingEffect: null,
+        indentChildren: false,
+        childrenIndenter: '&nbsp;'
+    });
+});
+    </script>
+</head>
+<body class="wrapper">
+
+<div class="topnav">
+    <ul id="nav" class="slimmenu">
+        <li><a href="./index.html"></a></li>
+        <li><a href="./index.html" class="first">首页</a></li>
+        <li><a href="./product.html">产品介绍</a></li>
+        <li><a href="./support.html">扶持计划</a></li>
+        <li><a href="./partner.html">招募伙伴</a></li>
+        <li><a href="./help.html">帮助中心</a></li>
+        <li><a href="./abouts.html">关于我们</a></li>
+        <li>
+            <div><a href="./logo.html">登录</a></div>
+        </li>
+    </ul>   
+</div>
+    <div class="container help_center">
+        <div class="side-btn" id="j-sidebtn">帮助菜单</div>
+        <div class="sidenav" id="j-sidenav">
+            <div class="sidenav-inner">
+                <p class="title">用户操作指南</p>
+                <ul>
+                    <li>
+                        <span class="first-item">供应大厅</span>
+                        <ul class="seconde-item">
+                            <li class="active"><a href="javascript:void(0)">供应大厅</a></li>
+                            <li><a href="javascript:void(0)">求购大厅</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="first-item">个人中心</span>
+                        <ul class="seconde-item">
+                            <li><a href="javascript:void(0)">头像</a></li>
+                            <li><a href="javascript:void(0)">我的苗店</a></li>
+                            <li><a href="javascript:void(0)">我的供应</a></li>
+                            <li><a href="javascript:void(0)">我的求购</a></li>
+                            <li><a href="javascript:void(0)">我的报价</a></li>
+                            <li><a href="javascript:void(0)">我的积分</a></li>
+                            <li><a href="javascript:void(0)">通讯录</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="first-item">发现</span>
+                        <ul class="seconde-item">
+                            <li><a href="javascript:void(0)">新手必读</a></li>
+                            <li><a href="javascript:void(0)">发布供应</a></li>
+                            <li><a href="javascript:void(0)">我的通讯录</a></li>
+                            <li><a href="javascript:void(0)">超级群助手</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="first-item">常见问题</span>
+                        <ul class="seconde-item">
+                            <li><a href="javascript:void(0)">常见问题</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl help_item">
+            <!--help_item-->
+            <p class="help_title" id="step0"><span>供求大厅</span></p>
+            <div class="rcontent">
+                <div class="title" id="step0">供应大厅</div>
+                <div class="smallTitle"><span class="tip">1、</span>供应大厅的排序</div>
+                <div>
+                    <p>当你打开供应大厅时，首先你会优先看到离你较近的供应产品，然后再按时间排序；进行了企业和实名认证的用户会相对排在前面，用户也可以点击下方菜单栏中的”我”，前往”个人中心”里的”我的供应”，对产品进行刷新；如您需要发布供应，请点击右下角”发布“！</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 1-1" title="图 1-1" data-original="images/help/1-1.jpg"
+                        src="images/help/1-1.jpg" style="display: inline;">
+                </div>
+                <div class="smallTitle"><span class="tip">2、</span>搜索供应</div>
+                <div>
+                    <p>在供应大厅右上方点击<img src="images/help/search.jpg">按钮，选择常用产品或在搜索框内输入关键字，能快速找到想要查看的供应产品。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 1-2" title="图 1-2" data-original="images/help/1-2.jpg"
+                        src="images/help/1-2.jpg" style="display: inline;">
+                </div>
+                <div class="smallTitle"><span class="tip">3、</span>供应详情</div>
+                <div>
+                    <p>找到想要查看的供应后，点击进去，您可以更全面的了解产品的规格、出产地等情况，你可以直接点击<img src="images/help/phone.jpg">按钮，联系供应商！</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 1-3" title="图 1-3" data-original="images/help/1-3.jpg"
+                        src="images/help/1-3.jpg" style="display: inline;">
+                </div>
+
+                <div class="title" id="step1">求购大厅</div>
+                <div class="smallTitle"><span class="tip">1、</span>求购大厅的排序</div>
+                <div>
+                    <p>求购大厅是按时间排序的，请注意截至的时间提醒。求购大厅内会出现单个求购，也会出现采购单。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 1-4" title="图 1-4" data-original="images/help/1-4.jpg"
+                        src="images/help/1-4.jpg" style="display: inline;">
+                </div>
+                <div class="smallTitle"><span class="tip">2、</span>搜索求购</div>
+                <div>
+                    <p>在求购大厅右上方点击<img src="images/help/search.jpg">按钮，选择常用产品或在搜索框内输入关键字，能快速找到想要查看的求购产品。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 1-5" title="图 1-5" data-original="images/help/1-5.jpg"
+                        src="images/help/1-5.jpg" style="display: inline;">
+                </div>
+                <div class="smallTitle"><span class="tip">3、</span>采购详情</div>
+                <div>
+                    <p>找到想要查看的求购后，点击进去，您可以更全面的了解采购商的需求，您可以在”联系买家”处点击电话号码，联系采购商！您也可以在底部输入”单价”和”数量”进行报价，或者带图报价。您的报价只有该采购人能看到，请您放心。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 1-6" title="图 1-6" data-original="images/help/1-6.jpg"
+                        src="images/help/1-6.jpg" style="display: inline;">
+                </div>
+                <div class="smallTitle"><span class="tip">4、</span>采购单详情</div>
+                <div>
+                    <p>找到想要查看的采购单后，点击进去，您可以了解报价要求等详细要求。点击采购单内的单个采购，都会跳转至采购详情，您可以分别对其报价。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 1-7" title="图 1-7" data-original="images/help/1-7.jpg"
+                        src="images/help/1-7.jpg" style="display: inline;">
+                </div>
+            </div>
+
+            <p class="help_title" id="step2"><span>个人中心</span></p>
+            <div class="rcontent">
+                <div class="title" id="step2">头像</div>
+                <div><span class="tip">一、</span>点击右方个人二维码，分享二维码名片给好友</div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-1" title="图 2-1" data-original="images/help/2-1.png"
+                        src="images/help/2-1.png" style="display: inline;">
+                </div>
+                <div><span class="tip">二、</span>点击”头像”进入”个人信息修改页”</div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-2" title="图 2-2" data-original="images/help/2-2.png"
+                        src="images/help/2-2.png" style="display: inline;">
+                </div>
+                <div><span>1、</span>头像</div>
+                <div>
+                    <p>点击“头像”栏可对当前头像进行修改，查看头像情况。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-3" title="图 2-3" data-original="images/help/2-3.png"
+                        src="images/help/2-3.png" style="display: inline;">
+                </div>
+                <div><span>2、</span>姓名</div>
+                <div>
+                    <p>点击“姓名“栏可对当前姓名进行修改，查看姓名修改情况。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-3" title="图 2-3" data-original="images/help/2-3.png"
+                        src="images/help/2-3.png" style="display: inline;">
+                </div>
+                <div><span>3、</span>手机号码</div>
+                <div>
+                    <p>点击”手机号”进入页面，填写本人正确的手机号码，发送验证短信，填写验证码，进行手机号码修改或验证。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-5" title="图 2-5" data-original="images/help/2-5.png"
+                        src="images/help/2-5.png" style="display: inline;">
+                </div>
+                <div><span>4、</span>苗店简介</div>
+                <div>
+                    <p>点击“苗店简介”栏可对当前苗店信息进行修改，确认修改完毕后，需要去我的苗店”简介板块”查看苗店信息修改情况。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-6" title="图 2-6" data-original="images/help/2-6.png"
+                        src="images/help/2-6.png" style="display: inline;">
+                </div>
+                <div><span>5、</span>实名认证</div>
+                <div>
+                    <p>在个人信息修改页找到“实名认证”，按要求上传身份证正反面照片和手持身份证半身露脸照进行实名认证。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-7" title="图 2-7" data-original="images/help/2-7.png"
+                        src="images/help/2-7.png" style="display: inline;">
+                </div>
+                <div><span>6、</span>企业认证</div>
+                <div>
+                    <p>在个人信息修改页找到“企业认证“，上传企业营业执照进行企业认证。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-8" title="图 2-8" data-original="images/help/2-8.png"
+                        src="images/help/2-8.png" style="display: inline;">
+                </div>
+                <div><span>7、</span>设置</div>
+                <div>
+                    <p>在个人信息修改页中找到“设置”， 选择开通或关闭个人权限。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-9" title="图 2-9" data-original="images/help/2-9.jpg"
+                        src="images/help/2-9.jpg" style="display: inline;">
+                </div>
+
+                <table class="t_table" border="1" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <th>设置项
+                            </th>
+                            <th>开启
+                            </th>
+                            <th>关闭
+                            </th>
+                        </tr>
+                        <tr align="left">
+                            <td>关注我时无需审核</td>
+                            <td>别人加你为好友不需要经过你的同意就能通过</td>
+                            <td>别人加你为好友需要经过你的同意才能通过</td>
+                        </tr>
+                        <tr>
+                            <td>加圈子无需审核</td>
+                            <td>别人拉你入圈子不需要经过你的同意就能通过</td>
+                            <td>别人拉你入圈子需要经过你的同意才能通过</td>
+                        </tr>
+                        <tr>
+                            <td>自动添加好友</td>
+                            <td>浏览非好友信息时，将自动发出添加好友申请</td>
+                            <td>浏览非好友信息时，不会发出添加好友申请</td>
+                        </tr>
+                        <tr>
+                            <td>默认开放我的供应</td>
+                            <td>添加好友成功后，将对他展示供应产品</td>
+                            <td>添加好友成功后，将不对他展示供应产品</td>
+                        </tr>
+                        <tr>
+                            <td>默认开放我的求购</td>
+                            <td>添加好友成功后，将对他展示采购产品</td>
+                            <td>添加好友成功后，将不对他展示采购产品</td>
+                        </tr>
+                        <tr>
+                            <td>供应产品自动上架</td>
+                            <td>发布过的供应产品将自动在苗店里展示</td>
+                            <td>发布过的供应产品不会自动在苗店里展示</td>
+                        </tr>
+                        <tr>
+                            <td>开启消息推送</td>
+                            <td>将通过公众号收到最新的求购、供应、报价、留言等消息</td>
+                            <td>不再收到系统内部的最新提示</td>
+                        </tr>
+                        <tr>
+                            <td>开启采购方模式</td>
+                            <td>苗店第二栏为”求购板块”</td>
+                            <td>苗店第二栏为”价格板块”</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="title" id="step3">我的苗店</div>
+                <div>
+                    <p>进入“个人中心”页，您就可以看到“我的苗店”这个功能，点击进去就能开始打造属于自己的苗店了。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-10" title="图 2-10" data-original="images/help/2-10.jpg"
+                        src="images/help/2-10.jpg" style="display: inline;">
+                </div>
+                <div><span>1、</span>供应板块</div>
+                <div>
+                    <p>如果您的苗店还没有供应产品，您可以点击“马上发布”的按钮进行发布，稍后会跳转至“发布供求”的页面，进行发布操作即可，发布后您的产品会在我的苗店中的供应板块得到展示。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-11" title="图 2-11" data-original="images/help/2-11.png"
+                        src="images/help/2-11.png" style="display: inline;">
+                </div>
+                <div><span>2、</span>价格板块\求购板块</div>
+                <div>
+                    <p>当您没有发布求购时，系统将此版块默认为价格模式，当您发布了求购时，系统将此版块默认为求购模式。您如果只想此处停留在某一模式，请去个人中心点头像进入个人信息修改，在设置中”开启采购方模式”一栏选择开启或关闭。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-11" title="图 2-11" data-original="images/help/2-11.png"
+                        src="images/help/2-11.png" style="display: inline;">
+                    <img class="lazy" width="280" height="490" alt="图 2-12" title="图 2-12" data-original="images/help/2-12.png"
+                        src="images/help/2-12.png" style="display: inline;">
+                </div>
+                <div><span>3、</span>简介板块</div>
+                <div>
+                    <p>苗店简介在“个人资料修改”页或”店铺装修”进行完善，完整填写资料会为您的苗店增色不少。填完资料后点击“确认修改”，您可以在“我的苗店”中看到简介内容。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-13" title="图 2-13" data-original="images/help/2-13.png"
+                        src="images/help/2-13.png" style="display: inline;">
+                </div>
+                <div><span>4、</span>供应管理</div>
+                <div>
+                    <p>点击“供应管理”可以对产品进行上下架\排序等操作。下架的产品会回到产品库中，产品库中的产品可以进行编辑后再次上架。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-14" title="图 2-14" data-original="images/help/2-14.png"
+                        src="images/help/2-14.png" style="display: inline;">
+                </div>
+                <div><span>5、</span>店铺装修</div>
+                <div>
+                    <p>店铺装修可以更换店铺招牌和店铺轮播图。可以选择系统自带的，也可以选择手机相册中尺寸合适的自定义图片。还可以进行苗店简介的完善或修改。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-15" title="图 2-15" data-original="images/help/2-15.jpg"
+                        src="images/help/2-15.jpg" style="display: inline;">
+                </div>
+                <div><span>6、</span>供应管理</div>
+                <div>
+                    <p>点击“供应管理”可以对产品进行上下架\排序等操作。下架的产品会回到产品库中，产品库中的产品可以进行编辑后再次上架。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-16" title="图 2-16" data-original="images/help/2-16.jpg"
+                        src="images/help/2-16.jpg" style="display: inline;">
+                </div>
+
+                <div class="title" id="step4">我的供应</div>
+                <div>
+                    <p>在个人中点击”我的供应”，进入后对供应产品进行集中管理。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-17" title="图 2-17" data-original="images/help/2-17.png"
+                        src="images/help/2-17.png" style="display: inline;">
+                </div>
+                <div><span>1、</span>发布新产品</div>
+                <div>
+                    <p>点击”发布新产品”，进行供应产品的发布</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-18" title="图 2-18" data-original="images/help/2-18.png"
+                        src="images/help/2-18.png" style="display: inline;">
+                </div>
+                <div><span>2、</span>刷新</div>
+                <div>
+                    <p>点击”刷新”，更新已有供应，让你的信息排名更靠前</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-19" title="图 2-19" data-original="images/help/2-19.png"
+                        src="images/help/2-19.png" style="display: inline;">
+                </div>
+                <div><span>3、</span>长按供应产品</div>
+                <div>
+                    <p>长按目标项，对该条供应产品进行编辑或删除。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-20" title="图 2-20" data-original="images/help/2-20.jpg"
+                        src="images/help/2-20.jpg" style="display: inline;">
+                </div>
+
+                <div class="title" id="step5">我的求购</div>
+                <div>
+                    <p>在个人中点击”我的求购”，进入后对求购产品进行集中管理。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-21" title="图 2-21" data-original="images/help/2-21.png"
+                        src="images/help/2-21.png" style="display: inline;">
+                </div>
+                <div><span>1、</span>发布新求购</div>
+                <div>
+                    <p>点击”发布新求购”，进行求购产品的发布</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-22" title="图 2-22" data-original="images/help/2-22.png"
+                        src="images/help/2-22.png" style="display: inline;">
+                </div>
+                <div><span>2、</span>收到几条报价</div>
+                <div>
+                    <p>您以清楚地看到收到了几条报价。点击进去查看报价人和报价情况。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-23" title="图 2-23" data-original="images/help/2-23.png"
+                        src="images/help/2-23.png" style="display: inline;">
+                </div>
+                <div><span>3、</span>长按求购产品</div>
+                <div>
+                    <p>长按目标项，对该条求购产品进行编辑、删除或终止报价。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-24" title="图 2-24" data-original="images/help/2-24.png"
+                        src="images/help/2-24.png" style="display: inline;">
+                </div>
+
+                <div class="title" id="step6">我的报价</div>
+                <div>
+                    <p>在个人中心点击”我的报价”，查看报价情况。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-25" title="图 2-25" data-original="images/help/2-25.png"
+                        src="images/help/2-25.png" style="display: inline;">
+                </div>
+
+                <div class="title" id="step7">我的积分</div>
+                <div>
+                    <p>在个人中心点击“我的积分“，您可以赚取积分、花积分兑换礼品或查看积分明细。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-26" title="图 2-26" data-original="images/help/2-26.png"
+                        src="images/help/2-26.png" style="display: inline;">
+                </div>
+                <div class="smallTitle"><span class="tip">1、</span>赚积分</div>
+                <div>
+                    <p>您可以在赚积分页面领取任务，赚取积分。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-27" title="图 2-27" data-original="images/help/2-27.png"
+                        src="images/help/2-27.png" style="display: inline;">
+                </div>
+                <div class="smallTitle"><span class="tip">2、</span>花积分</div>
+                <div>
+                    <p>您可以在花积分页面消耗积分，兑换礼品和服务。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-28" title="图 2-28" data-original="images/help/2-28.png"
+                        src="images/help/2-28.png" style="display: inline;">
+                </div>
+                <div class="smallTitle"><span class="tip">3、</span>积分明细</div>
+                <div>
+                    <p>您所有积分增加或消耗的情况都会记录在积分详细里，方便您查明。</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 2-29" title="图 2-29" data-original="images/help/2-29.png"
+                        src="images/help/2-29.png" style="display: inline;">
+                </div>
+
+                <div class="title" id="step8">通讯录</div>
+                <div class="smallTitle" id="step8"><span class="tip">1、</span>添加好友</div>
+                <div>添加好友方法一</div>
+                <div>在圈子通讯录页，长按想要加为好友的圈子成员，即会弹出“关注该用户”，点击关注会向该用户发送加好友申请。</div>
+                <div><span class="tip">1、</span>打开”发现”，找到“我的通讯录”，点击进入</div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 6-1" title="图 6-1" data-original="images/help/6-1.jpg"
+                        src="images/help/6-1.jpg" style="display: inline;">
+                </div>
+                <div><span class="tip">2、</span>在“通讯录”页，点击右上角，发送给朋友或分享到朋友圈</div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 6-2" title="图 6-2" data-original="images/help/6-2.jpg"
+                        src="images/help/6-2.jpg" style="display: inline;">
+                </div>
+                <div><span class="tip">3、</span>点击“发送”，将个人名片分享出去</div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 6-3" title="图 6-3" data-original="images/help/6-3.jpg"
+                        src="images/help/6-3.jpg" style="display: inline;">
+                </div>
+                <div>添加好友方法二</div>
+                <div>在个人中心页点击二维码，会弹出一个您专属的二维码名片，将这个名片分享到朋友圈或微信群。其他用户扫码后即可与您成为好友。</div>
+                <div><span class="tip">1、</span>在主页面上找到“个人中心”，点击进去</div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 6-4" title="图 6-4" data-original="images/help/6-4.png"
+                        src="images/help/6-4.png" style="display: inline;">
+                </div>
+                <div><span class="tip">2、</span>在“个人中心”页面找到“二维码”，点击进入</div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 6-6" title="图 6-6" data-original="images/help/6-6.png"
+                        src="images/help/6-6.png" style="display: inline;">
+                </div>
+                <div><span class="tip">3、</span>多端操作方法</div>
+                <div>
+                    <p>安卓端：点击右上角发送二维码给朋友</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 6-7" title="图 6-7" data-original="images/help/6-7.jpg"
+                        src="images/help/6-7.jpg" style="display: inline;">
+                </div>
+                <div>
+                    <p>苹果端：请长按此二维码图片，将此二维码分享给您的微信好友或圈，其他用户扫码后即可加为好友</p>
+                </div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 6-8" title="图 6-8" data-original="images/help/6-8.jpg"
+                        src="images/help/6-8.jpg" style="display: inline;">
+                </div>
+
+                <p class="smallTitle">2、<span>圈子服务</span></p>
+                <!--1-->
+                <div>通讯录在哪里</div>
+                <div><span class="tip">1、</span>在主页面中找到“发现”，点击进去</div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 5-1" title="图 5-1" data-original="images/help/5-1.jpg"
+                        src="images/help/5-1.jpg" style="display: inline;">
+                </div>
+                <!--2-->
+                <div>一、创建圈子</div>
+                <div>操作步骤： 通讯录→创建圈子→输入圈子名称→创建圈子成功。</div>
+                <div><span class="tip">1、</span>在“发现”里找到“我的通讯录”，点击进入</div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 5-2-1" title="图 5-2-1" data-original="images/help/5-2-1.png"
+                        src="images/help/5-2-1.png" style="display: inline;">
+                </div>
+                <div><span class="tip">2、</span>点击右上角分享“圈子通讯录”页给好友或朋友圈，好友收到后同意即被邀请加入圈子</div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 5-2" title="图 5-2" data-original="images/help/5-2.jpg"
+                        src="images/help/5-2.jpg" style="display: inline;">
+                </div>
+                <div><span class="tip">3、</span>输入圈子名称，点击确认</div>
+                <div class="images">
+                    <img class="lazy" width="280" alt="图 5-3" title="图 5-3" data-original="images/help/5-3.jpg" src="images/help/5-3.jpg"
+                        style="display: inline;">
+                </div>
+                <!--3-->
+                <div>二、邀请好友加入圈子</div>
+                <div><span class="tip">1、</span>点击任意圈子，进入“圈子通讯录”</div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 5-4" title="图 5-4" data-original="images/help/5-4.jpg"
+                        src="images/help/5-4.jpg" style="display: inline;">
+                </div>
+                <div><span class="tip">2、</span>点击右上角分享“圈子通讯录”页给好友或朋友圈，好友收到后同意即被邀请加入圈子</div>
+                <div class="images">
+                    <img class="lazy" width="280" alt="图 5-5" title="图 5-5" data-original="images/help/5-5.png" src="images/help/5-5.png"
+                        style="display: inline;">
+                </div>
+                <div><span class="tip">3、</span>点击圈子分享，会弹出浮窗提示，点右上角即将”圈子通讯录”分享出去</div>
+                <div class="images">
+                    <img class="lazy" width="280" alt="图 5-6" title="图 5-6" data-original="images/help/5-6.png" src="images/help/5-6.png"
+                        style="display: inline;">
+                </div>
+                <!--4-->
+                <div>三、管理圈子</div>
+                <div>通讯录→点开任意圈子→圈子管理→默认权限。</div>
+                <div><span class="tip">1、</span>在“圈子管理”中点开“默认权限”</div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 5-7" title="图 5-7" data-original="images/help/5-7.png"
+                        src="images/help/5-7.png" style="display: inline;">
+                </div>
+                <div><span class="tip">2、</span>在“权限设置”中，您可以进行圈内权限操作</div>
+                <div class="images">
+                    <img class="lazy" width="280" alt="图 5-8" title="图 5-8" data-original="images/help/5-8.jpg" src="images/help/5-8.jpg"
+                        style="display: inline;">
+                </div>
+                <div>四、圈主的权限</div>
+                <div><span class="tip">1、</span>圈主可以设置新成员加入圈子时的相关权限</div>
+                <div class="images">
+                    <img class="lazy" width="280" height="490" alt="图 5-9" title="图 5-9" data-original="images/help/5-9.jpg"
+                        src="images/help/5-9.jpg" style="display: inline;">
+                </div>
+                <div><span class="tip">2、</span>圈主可以在“圈子通讯录”页长按某一成员，设置该成员在圈内权限或移除该成员</div>
+                <div class="images">
+                    <img class="lazy" width="280" alt="图 5-10" title="图 5-10" data-original="images/help/5-10.jpg" src="images/help/5-10.jpg"
+                        style="display: inline;">
+                </div>
+            </div>
+
+            <p class="help_title" id="step9"><span>发现</span></p>
+            <div class="rcontent" style="padding:0;">
+                <div class="smallTitle" id="step9"><span>1、</span>新手必读</div>
+                <div>
+                    <p>新手必读就是用户手机上使用苗木通的帮助中心。</p>
+                </div>
+                <div class="smallTitle" id="step10"><span>2、</span>新手必读</div>
+                <div>
+                    <p>点击”发布供求”，进入发布供应\求购的页面。</p>
+                </div>
+                <div class="smallTitle" id="step11"><span>3、</span>我的通讯录</div>
+                <div>
+                    <p>提供快速进入“通讯录“的入口。</p>
+                </div>
+                <div class="smallTitle" id="step12"><span>4、</span>超级群助手</div>
+                <div>
+                    <p>苗木通“超级群助手”，是一个提供超500个微信群、上十万苗木好友的供求信息社区。24小时供求信息实时滚动直播，给用户最好最快的绝佳体验。</p>
+                </div>
+            </div>
+
+            <p class="help_title"><span>常见问题</span></p>
+            <div class="rcontent" style="padding:0;margin:0;">
+                <div class="smallTitle" id="step30">常见问题</div>
+                <div><span class="tip">1、</span>”苗木通”是免费的吗?</div>
+                <div>答：是的，“苗木通”的基础功能是永久免费的。</div>
+                <div><span class="tip">2、</span>怎么将”苗木通”添加到桌面？</div>
+                <div>答：安卓机可以在关注”苗木通”公众号的的页面点击右上角，选择添加至桌面。</div>
+                <div class="images">
+                    <img class="lazy" width="280" alt="图 9-1" title="图 9-1" data-original="images/help/9-1.jpg" src="images/help/9-1.jpg"
+                        style="display: inline;">
+                </div>
+                <div><span class="tip">3、</span>为什么别人看不到我的供求?</div>
+                <div>答：因为您的通讯录中没有好友，所以别人是看不到您的供求的。您可以发送苗名片或者分享苗店给好友，成为好友后别人就可以看到您的供求。</div>
+                <div><span class="tip">4、</span>“转为我的供应/求购”原发布人能否看到?</div>
+                <div>答：原发布人不能看到您转发的信息，所以当您有一样的供求时，最好重新发布。</div>
+                <div><span class="tip">5、</span>圈子通讯录排名规则是怎样的?</div>
+                <div>答：圈子通讯录排名前后顺序由邀请好友数量多少决定，当您在某一圈子邀请的圈友越多，您在此圈子中的排名越靠前</div>
+                <div><span class="tip">6、</span>我的页面为什么显示不正常?</div>
+                <div class="images">
+                    <img class="lazy" width="280" alt="图 9-2" title="图 9-2" data-original="images/help/9-2.jpg" src="images/help/9-2.jpg"
+                        style="display: inline;">
+                </div>
+                <div>答：有可能是您手机页面字体设置过大或过小啦，点击右上角设置字体恢复正常即可。若不是此原因，请呼叫客服。</div>
+                <div class="images">
+                    <img class="lazy" width="280" alt="图 9-3" title="图 9-3" data-original="images/help/9-3.jpg" src="images/help/9-3.jpg"
+                        style="display: inline;">
+                </div>
+            </div>
+
+        </div>
+        <!--help_item-->
+
+    </div>
+    <footer class="footer">
+
+        <p>湖南苗木通信息科技有限公司</p>
+        <p>地址：长沙市雨花区德思勤城市广场A6栋3-3012</p>
+        <p>邮箱：help@51mmt.com 电话：400-8448-100</p>
+        <p style="opacity:0.5;">&copy; 2016-2018 51mmt.com 湘ICP备15000958号-1 </p>
+        <p>
+            <a target="_blank" href="http://jq.qq.com/?_wv=1027&k=XAlTa2">
+                <img border="0" src="images/group.png" alt="苗木通QQ群" title="苗木通QQ群">
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
